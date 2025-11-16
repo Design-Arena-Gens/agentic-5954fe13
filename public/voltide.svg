@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="voltide-core" cx="55%" cy="45%" r="62%">
+      <stop offset="0%" stop-color="#f6fbff" />
+      <stop offset="42%" stop-color="#9ee6ff" />
+      <stop offset="100%" stop-color="#457bff" />
+    </radialGradient>
+    <linearGradient id="voltide-crest" x1="25%" y1="0%" x2="95%" y2="90%">
+      <stop offset="0%" stop-color="#ffe9b6" stop-opacity="0.9" />
+      <stop offset="48%" stop-color="#ffb48a" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#f9659a" stop-opacity="0.78" />
+    </linearGradient>
+    <filter id="voltide-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#voltide-glow)">
+    <path
+      d="M132 20c28 2 58 16 72 38s14 52 4 74-32 38-56 52-52 26-76 18-44-34-54-60-8-56 8-78 46-44 80-44 16 0 22 0z"
+      fill="url(#voltide-core)"
+    />
+    <path
+      d="M128 32c20 0 44 12 58 30s18 40 12 58-26 32-44 44-38 20-56 16-32-22-40-40-6-40 4-58 46-50 66-50z"
+      fill="url(#voltide-crest)"
+      opacity="0.82"
+    />
+    <path
+      d="M64 160c12-12 32-12 44-6s18 18 16 26-16 12-30 10-28-10-30-18z"
+      fill="#ffe6ff"
+      opacity="0.6"
+    />
+    <path
+      d="M154 74c-8 12-4 28 6 34s26 2 34-10 6-28-4-36-28 0-36 12z"
+      fill="#fff"
+      opacity="0.5"
+    />
+  </g>
+</svg>
